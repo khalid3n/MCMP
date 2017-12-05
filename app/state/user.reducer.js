@@ -1,13 +1,14 @@
+import { Map } from 'immutable';
 import { CLICKED } from '../login/login.action';
 
-const defaultState = {
-  isClicked: false,
-};
+const initialState = Map({
+  isClicked: 'asdfa',
+});
 
-const user = (state = defaultState, action) => {
+const user = (state = initialState, action) => {
   switch (action.type) {
     case CLICKED:
-      return state.set('isClicked', true);
+      return state.set('isClicked', 'kjhgkjhg');
     default:
       return state;
   }

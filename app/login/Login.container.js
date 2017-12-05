@@ -4,7 +4,7 @@ import { clicked } from './login.action';
 import Login from './Login.view';
 
 const mapStateToProps = state => ({
-  isClicked: state.get('isClicked'),
+  isClicked: state.get(['use', 'clicked']),
 });
 
 const mapDispatchToProps = dispatch => ({

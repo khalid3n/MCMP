@@ -22,5 +22,7 @@
     "semi": "warn",
     "arrow-body-style": "off",
     "react/jsx-no-undef": 1,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true, }],
+    "import/no-mutable-exports": 0
   }
 }

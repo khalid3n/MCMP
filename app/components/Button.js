@@ -24,12 +24,12 @@ class Button extends PureComponent {
   }
 
   getEnhancedStyles() {
-    let defaultStyles = Button.defaultStyles;
+    let styles = Button.defaultStyles;
     if (this.state.hover && !this.props.disabled) {
-      defaultStyles.backgroundColor = '#0a7ed2';
-      defaultStyles = merge({}, defaultStyles, this.props.hoverStyles);
+      styles.backgroundColor = '#0a7ed2';
+      styles = merge({}, styles, this.props.hoverStyles);
     }
-    return merge({}, defaultStyles, this.props.styles);
+    return merge({}, styles, this.props.styles);
   }
 
   render() {

@@ -6,21 +6,26 @@ import Button from '../components/Button';
 class Login extends PureComponent {
   render() {
     return (
-      <Button
-        type="button"
-        text="Hello!"
-        onClick={this.props.clicked}
-      />
+      <div>
+        <label htmlFor="test">{this.props.isClicked}</label>
+        <Button
+          type="button"
+          text="Hello!"
+          onClick={this.props.clicked}
+        />
+      </div>
     );
   }
 }
 
 Login.propTypes = {
   clicked: PropTypes.func,
+  isClicked: PropTypes.string,
 };
 
 Login.defaultProps = {
   clicked: noop,
+  isClicked: '',
 };
 
 export default Login;

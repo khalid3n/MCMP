@@ -3,3 +3,10 @@ $color: #262828;
 body {
   color: $color;
 }
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  outline: 0;
+}

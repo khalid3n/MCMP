@@ -25,4 +25,12 @@ if (process.env.NODE_ENV === 'production') {
   };
 }
 
+if (module.hot) {
+  // Enable Webpack hot module replacement for reducers
+  module.hot.accept('./rootReducer', () => {
+    const nextRootReducer = require('./rootReducer');
+    configureStore.replaceReducer(nextRootReducer);
+  });
+}
+
 export default configureStore;

@@ -1,22 +1,18 @@
 import React from 'react';
 import { shallow, configure } from 'enzyme';
-import App from '../../app/components/App';
+import Button from '../../app/components/Button';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-describe('App Component', () => {
+describe('Button Component', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<Button text="hello" />);
   });
 
   it('should exist', () => {
     expect(wrapper).toBeTruthy();
-  });
-  
-  it('should have one heading', () => {
-    expect(wrapper.find('#heading').type()).toEqual('h2');
   });
 });

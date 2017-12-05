@@ -1,0 +1,14 @@
+## Directory-based project format:
+.idea/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# NodeJS modules folder
+node_modules
+
+# npm debug log
+npm-debug.log
+
+# coverage
+/coverage

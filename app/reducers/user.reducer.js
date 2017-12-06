@@ -8,7 +8,7 @@ const initialState = Map({
 const user = (state = initialState, action) => {
   switch (action.type) {
     case CLICKED:
-      return state.set('isClicked', 'clicked nhhow');
+      return state.set('isClicked', 'clicked now');
     default:
       return state;
   }

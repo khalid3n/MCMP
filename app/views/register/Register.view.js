@@ -1,20 +1,20 @@
 import React, { PureComponent } from 'react';
 import noop from 'lodash/noop';
 import PropTypes from 'prop-types';
-import Button from '../components/Button';
-import Header from '../components/Header';
-import Label from '../components/Label';
+import Button from '../../components/Button';
+import Header from '../../components/Header';
+import Label from '../../components/Label';
 
-class Login extends PureComponent {
+class Register extends PureComponent {
   render() {
-    const styles = Login.styles;
+    const styles = Register.styles;
     return (
       <div>
-        <Header text="Welcome!!" />
+        <Header text="Register!!" />
         <div style={styles.btnStyle}>
           <Button
             type="button"
-            text="Go to next page"
+            text="Go to previous page"
             onClick={this.props.clicked}
           />
         </div>
@@ -24,20 +24,20 @@ class Login extends PureComponent {
   }
 }
 
-Login.propTypes = {
+Register.propTypes = {
   clicked: PropTypes.func,
   isClicked: PropTypes.string,
 };
 
-Login.defaultProps = {
+Register.defaultProps = {
   clicked: noop,
   isClicked: '',
 };
 
-Login.styles = {
+Register.styles = {
   btnStyle: {
     textAlign: 'center',
   },
 };
 
-export default Login;
+export default Register;

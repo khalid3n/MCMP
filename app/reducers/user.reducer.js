@@ -1,5 +1,5 @@
 import { Map } from 'immutable';
-import { CLICKED } from '../login/login.action';
+import { CLICKED } from '../views/main/main.action';
 
 const initialState = Map({
   isClicked: 'not clicked',
@@ -8,7 +8,7 @@ const initialState = Map({
 const user = (state = initialState, action) => {
   switch (action.type) {
     case CLICKED:
-      return state.set('isClicked', 'clicked now');
+      return state.set('isClicked', 'clicked nhhow');
     default:
       return state;
   }

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux-immutable';
-import user from './user.reducer';
+import user from '../reducers/user.reducer';
 
 const rootReducer = combineReducers({
   user,

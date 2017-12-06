@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { clicked } from './login.action';
+import { clicked } from './register.action';
 
-import Login from './Login.view';
+import Register from './Register.view';
 
 const mapStateToProps = state => ({
   isClicked: state.getIn(['user', 'isClicked']),
@@ -16,4 +16,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Login);
+)(Register);
